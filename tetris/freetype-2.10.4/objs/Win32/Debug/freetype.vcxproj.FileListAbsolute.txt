@@ -1,0 +1,2 @@
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\freetype-2.10.4\objs\Win32\Debug\freetype.dll
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\freetype-2.10.4\objs\Win32\Debug\freetype.pdb
