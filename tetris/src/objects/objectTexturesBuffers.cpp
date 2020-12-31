@@ -1,0 +1,127 @@
+/*
+	----------- Textures -----------
+*/
+const char //stage
+					 skyTexture[]="images/textures/sky.dds",
+					 wallsTexture[]="images/textures/wall.dds",
+					 floorTexture[]="images/textures/floor.dds",
+					 //menus
+					 //intro
+					 menuTexture[]="images/textures/introMenu.dds",
+					 //saves
+					 save1Texture[]="images/textures/saveMenu1.dds",
+					 save2Texture[]="images/textures/saveMenu2.dds",
+					 save3Texture[]="images/textures/saveMenu3.dds",
+					 save4Texture[]="images/textures/saveMenu4.dds",
+					 save5Texture[]="images/textures/saveMenu5.dds",
+					 savePlayGuestTexture[]="images/textures/saveMenuGuest.dds",
+					 //main menu
+					 menuPlayTexture[]="images/textures/menu/menuPlay.dds",
+					 menuProfileTexture[]="images/textures/menu/menuProfile.dds",
+					 menuSkinsTexture[]="images/textures/menu/menuSkins.dds",
+					 menuSettingsTexture[]="images/textures/menu/menuSettings.dds",
+					 menuRickRollTexture[]="images/textures/menu/menuEasterEgg.dds",
+					 //settings
+					 settingsFullscreenTexture[]="images/textures/settings/settingsFullscreen.dds",
+					 settingsResolutionTexture[]="images/textures/settings/settingsResolution.dds",
+					 settingsAudioTexture[]="images/textures/settings/settingsAudio.dds",
+					 audio0Texture[]="images/textures/settings/audio/settingsAudio0.dds",
+					 audio1Texture[]="images/textures/settings/audio/settingsAudio1.dds",
+					 audio2Texture[]="images/textures/settings/audio/settingsAudio2.dds",
+					 audio3Texture[]="images/textures/settings/audio/settingsAudio3.dds",
+					 audio4Texture[]="images/textures/settings/audio/settingsAudio4.dds",
+					 audio5Texture[]="images/textures/settings/audio/settingsAudio5.dds",
+					 audio6Texture[]="images/textures/settings/audio/settingsAudio6.dds",
+					 audio7Texture[]="images/textures/settings/audio/settingsAudio7.dds",
+					 audio8Texture[]="images/textures/settings/audio/settingsAudio8.dds",
+					 audio9Texture[]="images/textures/settings/audio/settingsAudio9.dds",
+					 audio10Texture[]="images/textures/settings/audio/settingsAudio10.dds",
+					 resolution1Texture[]="images/textures/settings/resolution/resolution1.dds",
+					 resolution2Texture[]="images/textures/settings/resolution/resolution2.dds",
+					 resolution3Texture[]="images/textures/settings/resolution/resolution3.dds",
+					 resolution4Texture[]="images/textures/settings/resolution/resolution4.dds",
+					 //choose audio
+					 chooseAudioATexture[]="images/textures/chooseAudio/chooseAudioA.dds",
+					 chooseAudioBTexture[]="images/textures/chooseAudio/chooseAudioB.dds",
+					 //skins menu
+					 skin11Texture[]="images/textures/skins/1Unlocked1Selected.dds",
+					 skin21Texture[]="images/textures/skins/2Unlocked1Selected.dds",
+					 skin22Texture[]="images/textures/skins/2Unlocked2Selected.dds",
+					 skin31Texture[]="images/textures/skins/3Unlocked1Selected.dds",
+					 skin32Texture[]="images/textures/skins/3Unlocked2Selected.dds",
+					 skin33Texture[]="images/textures/skins/3Unlocked3Selected.dds",
+					 //profile
+					 unrankedTexture[]="images/textures/profile/unranked.dds",
+					 bronzeTexture[]="images/textures/profile/bronze.dds",
+					 silverTexture[]="images/textures/profile/silver.dds",
+					 goldTexture[]="images/textures/profile/gold.dds",
+					 platinumTexture[]="images/textures/profile/platinum.dds",
+					 diamondTexture[]="images/textures/profile/diamond.dds",
+					 masterTexture[]="images/textures/profile/master.dds",
+					 tetrisTexture[]="images/textures/profile/tetris.dds",
+					 //pause
+					 pauseGameTexture[]="images/textures/pause/pauseGame.dds",
+					 pauseMenuTexture[]="images/textures/pause/pauseMenu.dds",
+					 //game over
+					 gameOverBackTexture[]="images/textures/gameOver/gameOverBackToMainMenu.dds",
+					 gameOverPlayTexture[]="images/textures/gameOver/gameOverPlayAgain.dds",
+					 //skins
+					 //tetris
+					 skin0ITexture[]="images/textures/pieces/skin0/i.dds",
+					 skin0JTexture[]="images/textures/pieces/skin0/j.dds",
+					 skin0LTexture[]="images/textures/pieces/skin0/l.dds",
+					 skin0TTexture[]="images/textures/pieces/skin0/t.dds",
+					 skin0STexture[]="images/textures/pieces/skin0/s.dds",
+					 skin0ZTexture[]="images/textures/pieces/skin0/z.dds",
+					 skin0OTexture[]="images/textures/pieces/skin0/o.dds",
+					 //doom
+					 skin1ITexture[]="images/textures/pieces/skin1/i.dds",
+					 skin1JTexture[]="images/textures/pieces/skin1/j.dds",
+					 skin1LTexture[]="images/textures/pieces/skin1/l.dds",
+					 skin1TTexture[]="images/textures/pieces/skin1/t.dds",
+					 skin1STexture[]="images/textures/pieces/skin1/s.dds",
+					 skin1ZTexture[]="images/textures/pieces/skin1/z.dds",
+					 skin1OTexture[]="images/textures/pieces/skin1/o.dds",
+					 //minecraft
+					 skin2ITexture[]="images/textures/pieces/skin2/i.dds",
+					 skin2JTexture[]="images/textures/pieces/skin2/j.dds",
+					 skin2LTexture[]="images/textures/pieces/skin2/l.dds",
+					 skin2TTexture[]="images/textures/pieces/skin2/t.dds",
+					 skin2STexture[]="images/textures/pieces/skin2/s.dds",
+					 skin2ZTexture[]="images/textures/pieces/skin2/z.dds",
+					 skin2OTexture[]="images/textures/pieces/skin2/o.dds",
+					 //tetrominoes and score
+					 nextTexture[]="images/textures/text.dds",
+					 holdTexture[]="images/textures/text.dds",
+					 scoreTexture[]="images/textures/text.dds",
+					 scoreWhiteTexture[]="images/textures/textWhite.dds",
+					 lvlTexture[]="images/textures/text.dds",
+					 numberTexture[]="images/textures/text.dds",
+					 highscoreTexture[]="images/textures/text.dds";
+
+/*
+----------- Buffers -----------
+*/
+const char //stage
+					 skyObj[]="objects/sky.obj",
+					 floorObj[]="objects/floor.obj",
+					 //tetrominoes
+					 cubeObj[]="objects/cube.obj",
+					 nextObj[]="objects/next.obj",
+					 holdObj[]="objects/hold.obj",
+					 //menus
+					 menuObj[]="objects/introMenu.obj",
+					 //text
+					 scoreObj[]="objects/score.obj",
+					 lvlObj[]="objects/level.obj",
+					 highscoreObj[]="objects/highscore.obj",
+					 zeroObj[]="objects/numbers/zero.obj",
+					 oneObj[]="objects/numbers/one.obj",
+					 twoObj[]="objects/numbers/two.obj",
+					 threeObj[]="objects/numbers/three.obj",
+					 fourObj[]="objects/numbers/four.obj",
+					 fiveObj[]="objects/numbers/five.obj",
+					 sixObj[]="objects/numbers/six.obj",
+					 sevenObj[]="objects/numbers/seven.obj",
+					 eightObj[]="objects/numbers/eight.obj",
+					 nineObj[]="objects/numbers/nine.obj";	

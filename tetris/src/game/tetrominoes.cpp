@@ -1,6 +1,11 @@
+/*
+  ----------- Represents the current tetronimo -----------
+*/
 class Tetrominoes{
 private:
-	int xPosition, yPosition, rotationCenterX,rotationCenterY, rotationState;
+	//represents the rotation state
+	int rotationState;
+	//the coordinates of the square of each piece (0-3 represent the x values and 4-7 represent the y values)
 	int squareCoordinates[8];
 	TETROMINO_ID tetrominoID;
 public:
@@ -13,10 +18,6 @@ public:
 				board[20][4]=true;
 				board[20][5]=true;
 				board[20][6]=true;
-				this->xPosition=3;
-				this->yPosition=20;
-				this->rotationCenterX=4;
-				this->rotationCenterY=20;
 				/* x and y point
 				+ - - -
 				*/
@@ -36,10 +37,6 @@ public:
 				board[20][3]=true;
 				board[20][4]=true;
 				board[20][5]=true;
-				this->xPosition=3;
-				this->yPosition=21;
-				this->rotationCenterX=4;
-				this->rotationCenterY=20;
 				/* x and y point
 				+
 				- - -
@@ -60,10 +57,6 @@ public:
 				board[20][4]=true;
 				board[20][5]=true;
 				board[21][5]=true;
-				this->xPosition=5;
-				this->yPosition=21;
-				this->rotationCenterX=4;
-				this->rotationCenterY=20;
 				/* x and y point
 				    +
 				- - -
@@ -84,10 +77,6 @@ public:
 				board[20][4]=true;
 				board[21][4]=true;
 				board[21][5]=true;
-				this->xPosition=5;
-				this->yPosition=21;
-				this->rotationCenterX=4;
-				this->rotationCenterY=20;
 				/* x and y point
 				   - -
 				 - +
@@ -108,10 +97,6 @@ public:
 				board[21][4]=true;
 				board[20][4]=true;
 				board[20][5]=true;
-				this->xPosition=3;
-				this->yPosition=21;
-				this->rotationCenterX=4;
-				this->rotationCenterY=20;
 				/* x and y point
 				+ -
 				  - -
@@ -132,10 +117,6 @@ public:
 				board[20][4]=true;
 				board[21][5]=true;
 				board[20][5]=true;
-				this->xPosition=4;
-				this->yPosition=20;
-				this->rotationCenterX=4;
-				this->rotationCenterY=20;
 				/* x and y point
 				  - -
 					+ -
@@ -156,10 +137,6 @@ public:
 				board[20][4]=true;
 				board[21][4]=true;
 				board[20][5]=true;
-				this->xPosition=4;
-				this->yPosition=21;
-				this->rotationCenterX=4;
-				this->rotationCenterY=20;
 				/* x and y point
 					+
 				- - -
@@ -184,7 +161,6 @@ public:
 
 	void moveDown(bool board[][10]){
 		updateValues(board,false);
-		this->yPosition--;
 		this->squareCoordinates[4]--;
 		this->squareCoordinates[5]--;
 		this->squareCoordinates[6]--;
@@ -194,7 +170,6 @@ public:
 
 	void moveUp(bool board[][10]){
 		updateValues(board,false);
-		this->yPosition++;
 		this->squareCoordinates[4]++;
 		this->squareCoordinates[5]++;
 		this->squareCoordinates[6]++;
@@ -204,7 +179,6 @@ public:
 
 	void moveLeft(bool board[][10]){
 		updateValues(board,false);
-		this->xPosition--;
 		this->squareCoordinates[0]--;
 		this->squareCoordinates[1]--;
 		this->squareCoordinates[2]--;
@@ -214,7 +188,6 @@ public:
 
 	void moveRight(bool board[][10]){
 		updateValues(board,false);
-		this->xPosition++;
 		this->squareCoordinates[0]++;
 		this->squareCoordinates[1]++;
 		this->squareCoordinates[2]++;
@@ -224,7 +197,6 @@ public:
 
 	void rotateClockwise(bool board[][10]){
 		updateValues(board,false);
-		
 		if(tetrominoID==TETROMINO_ID::O){
 			updateValues(board,true);
 			return;
@@ -1795,7 +1767,6 @@ public:
 		board[squareCoordinates[7]][squareCoordinates[3]]=isNewValues;
 	}
 
-	//static
 	static TETROMINO_ID getInitialPiece(int *lastPiece){
 		srand(time(NULL));
 		int randomPiece=rand() % 7 + 1;
@@ -1895,5 +1866,9 @@ public:
 			*lastPiece=0;
 			return getRandomPiece(7,lastPiece);
 		}
+	}
+
+	int *getSquareCoordinates(){
+		return squareCoordinates;
 	}
 };

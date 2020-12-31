@@ -1,7 +1,8 @@
-void introMenu(unsigned int texture,Shader shader, unsigned int VAO){
-  glActiveTexture(GL_TEXTURE0);
-  glBindTexture(GL_TEXTURE_2D, texture);
-  shader.use();
-  glBindVertexArray(VAO);
-  glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+#include"cameraPosition.cpp"
+/*
+  ----------- Shows the intro menu -----------
+*/
+void showIntroMenu(){
+	setInitialCameraPosition(0.014757f,0.01f,2.392263,0.0f,0.0f,15.7,-6.285,&t);
+	DrawObjects::draw(&menuInfo,t,object3DShaders,GL_TRIANGLES,&menuObject.vertices);
 }

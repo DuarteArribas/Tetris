@@ -1,30 +1,24 @@
 ﻿  main.cpp
 D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\libs\shader_s.h(56,40): warning C4101: 'e': unreferenced local variable
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\vertexTransfer.cpp(10,17): warning C4018: '<': signed/unsigned mismatch
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\vertexTransfer.cpp(14,14): warning C4101: 'x': unreferenced local variable
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\vertexTransfer.cpp(23,17): warning C4018: '<': signed/unsigned mismatch
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\vertexTransfer.cpp(27,14): warning C4101: 'x': unreferenced local variable
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\drawObjects.cpp(35,17): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1800,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1828,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\keyHandling.cpp(112,34): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\keyHandling.cpp(308,25): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(476,29): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(477,29): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(485,31): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(486,28): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(509,31): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(510,28): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(530,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(531,29): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(1008,29): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(1009,29): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(1043,31): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(1044,28): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(1055,31): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(1056,28): warning C4305: '=': truncation from 'double' to 'float'
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(1184,16): warning C4018: '<': signed/unsigned mismatch
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(1187,16): warning C4018: '<': signed/unsigned mismatch
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1825): warning C4715: 'Tetrominoes::getInitialPiece': not all control paths return a value
-D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1898): warning C4715: 'Tetrominoes::getRandomPiece': not all control paths return a value
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\init.cpp(30,24): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\init.cpp(30,18): warning C4553: '==': result of expression not used; did you intend '='?
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1771,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1799,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\introMenu.cpp(6,76): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\saveMenu.cpp(5,77): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\profileMenu.cpp(5,74): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\skinMenu.cpp(5,74): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\menu.cpp(5,78): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\pause.cpp(5,78): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\gameOver.cpp(5,77): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\subMenu.cpp(5,74): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\musicSelectionMenu.cpp(5,78): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\keyHandling.cpp(417,27): warning C4305: '=': truncation from 'double' to 'float'
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(569,16): warning C4018: '<': signed/unsigned mismatch
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(572,16): warning C4018: '<': signed/unsigned mismatch
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(642,16): warning C4018: '<': signed/unsigned mismatch
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\main.cpp(645,16): warning C4018: '<': signed/unsigned mismatch
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\player.cpp(97): warning C4715: 'Player::rank': not all control paths return a value
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1796): warning C4715: 'Tetrominoes::getInitialPiece': not all control paths return a value
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1869): warning C4715: 'Tetrominoes::getRandomPiece': not all control paths return a value
   tetris.vcxproj -> D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\Debug\tetris.exe

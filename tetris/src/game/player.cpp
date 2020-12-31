@@ -1,8 +1,11 @@
+/*
+	----------- Represents the current player and its general settings -----------
+*/
 class Player{
 private:
-	GLint windowHeight,windowWidth; //768, 768
-	bool fullscreen;//false
-	float volume;//0.5f
+	GLint windowHeight,windowWidth;
+	bool fullscreen;
+	float volume;
 	long long score=0,highscore;
 public:
 	Player(GLint windowHeight,GLint windowWidth, bool fullscreen, float volume){
@@ -59,35 +62,36 @@ public:
 	void setHighscore(long long highscore){
 		this->highscore=highscore;
 	}
-
-	static char rank(long long n){
-		int count = 0;
-		while (n != 0) {
-			n /= 10;     
+	
+	//returns the player's rank according to its total score
+	static char rank(long long totalScore){
+		int count=0;
+		while(totalScore!=0){
+			totalScore /= 10;     
 			count++;
 		}
-		if(count > 10){
+		if(count>8){
 			return 'T';
 		}
-		else if(count > 9){
+		else if(count>7){
 			return 'M';
 		}
-		else if(count > 8){
+		else if(count>6){
 			return 'D';
 		}
-		else if(count > 7){
+		else if(count>5){
 			return 'P';
 		}
-		else if(count > 6){
+		else if(count>4){
 			return 'G';
 		}
-		else if(count > 5){
+		else if(count>3){
 			return 'S';
 		}
-		else if(count > 3){
+		else if(count>2){
 			return 'B';
 		}
-		else if(count <= 3){
+		else if(count<=1){
 			return 'U';
 		}
 	}

@@ -1,4 +1,6 @@
-//converts a string to a bool
+/*
+  ----------- Converts a string to a bool -----------
+*/
 bool toBool(std::string str) {
   std::transform(str.begin(), str.end(), str.begin(), ::tolower);
   std::istringstream is(str);
