@@ -9,6 +9,7 @@ void showProfileMenu(){
   //draw the player's rank
   if(Player::rank(currentPlayer.getScore())!='U'&&Player::rank(currentPlayer.getScore())!='T'){
     CreateNumberWhite(currentPlayer.getScore(),0.1f,0.1f,-0.3f,0.0f);
+    CreateNumberWhite(Player::toNextRank(currentPlayer.getScore()),0.1f,0.1f,-0.55f,0.0f);
   }
   if(Player::rank(currentPlayer.getScore())=='U'){
     DrawObjects::draw(&unrankedInfo,t,object3DShaders,GL_TRIANGLES,&menuObject.vertices);

@@ -95,4 +95,15 @@ public:
 			return 'U';
 		}
 	}
+
+	//returns how much points are needed to the next rank
+	static long long toNextRank(long long totalScore){
+		long long score=totalScore;
+		int count=0;
+		while(totalScore!=0){
+			totalScore /= 10;     
+			count++;
+		}
+		return pow(10,count)-score;
+	}
 };

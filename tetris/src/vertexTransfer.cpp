@@ -21,6 +21,6 @@ public:
 		//uvs' buffer
 		glGenBuffers(1, &info->uvbuffer);
 		glBindBuffer(GL_ARRAY_BUFFER, info->uvbuffer);
-		glBufferData(GL_ARRAY_BUFFER, (&object->uvs)->size() * sizeof(glm::vec3), &object->uvs[0][0], GL_STATIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, (&object->uvs)->size() * sizeof(glm::vec2), &object->uvs[0][0], GL_STATIC_DRAW);
 	}
 };

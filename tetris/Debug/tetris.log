@@ -4,6 +4,7 @@ D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\init.cpp(30,
 D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\init.cpp(30,18): warning C4553: '==': result of expression not used; did you intend '='?
 D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1771,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\tetrominoes.cpp(1799,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\game\player.cpp(107,23): warning C4244: 'return': conversion from 'double' to '__int64', possible loss of data
 D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\introMenu.cpp(6,76): warning C4305: 'argument': truncation from 'double' to 'float'
 D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\saveMenu.cpp(5,77): warning C4305: 'argument': truncation from 'double' to 'float'
 D:\duart\Documents\uni\computerGraphics\ex\tetris\tetris\tetris\src\scenes\profileMenu.cpp(5,74): warning C4305: 'argument': truncation from 'double' to 'float'
